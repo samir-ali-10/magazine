@@ -1,0 +1,27 @@
+@import "./variable/variables";
+
+@import "./layout/home";
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    height: 5000px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.container {
+    max-width: 75%;
+    margin: auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
