@@ -2,6 +2,7 @@
 
 header {
     background-color: $secondary-color;
+    padding: 0 15px;
 
     .container {
         display: flex;
@@ -87,6 +88,7 @@ header {
         padding: 0 20px 0 20px;
         margin-bottom: 15px;
         height: 42px;
+
         &.stick {
             position: fixed;
             top: 0;
@@ -107,6 +109,7 @@ header {
                 }
             }
         }
+
         .menu_burger {
             display: none;
         }
@@ -141,6 +144,10 @@ header {
 
         .top_1 {
             margin-right: 20px;
+
+            img {
+                width: 100%;
+            }
         }
 
         .top_1,
@@ -170,12 +177,15 @@ header {
                 font-size: .7rem;
                 bottom: 20px;
                 left: 20px;
+
                 button {
                     font-size: .8rem;
                 }
+
                 h2 {
                     font-size: .8rem;
                 }
+
                 .info {
                     a {
                         font-size: .6rem;
@@ -210,6 +220,11 @@ header {
                 font-weight: 100;
             }
 
+            h2 {
+                margin-top: 10px;
+                margin-bottom: 10px;
+            }
+
             .info {
                 a {
                     color: white;
@@ -218,6 +233,268 @@ header {
 
                     i {
                         margin-right: 10px;
+                    }
+                }
+            }
+        }
+    }
+
+    .breaking_news {
+        background-color: white;
+        padding: 2px 15px;
+        margin-top: 10px;
+
+        p {
+            text-transform: capitalize;
+            font-weight: 600;
+
+            span {
+                color: $special-color;
+            }
+        }
+    }
+}
+
+.news {
+    background-color: $background-color;
+    padding-top: 80px;
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+
+        .big_news {
+            margin-right: 20px;
+            width: 70%;
+
+            .latest_news {
+                background-color: white;
+                padding: 20px;
+
+                .heading {
+                    background-color: $secondary-color;
+                    padding: 10px 20px;
+                    margin-bottom: 20px;
+
+                    h3 {
+                        color: white;
+                        text-transform: capitalize;
+                        font-size: .9rem;
+                    }
+                }
+
+                .card {
+                    display: flex;
+                    align-items: center;
+                    margin-bottom: 20px;
+
+                    .image {
+                        margin-right: 20px;
+                        position: relative;
+                        overflow: hidden;
+
+                        img {
+                            width: 100%;
+                            height: 100%;
+                            transition: .3s;
+                            -webkit-transition: .3s;
+                            -moz-transition: .3s;
+                            -ms-transition: .3s;
+                            -o-transition: .3s;
+                        }
+
+                        .overlay {
+                            position: absolute;
+                            inset: 0;
+                            background-color: rgba(0, 0, 0, 0.4);
+                        }
+
+                        button {
+                            position: absolute;
+                            left: 15px;
+                            bottom: 15px;
+                            color: white;
+                            text-transform: capitalize;
+                            background-color: $special-color;
+                            border: none;
+                            padding: 5px 20px;
+                            cursor: pointer;
+                        }
+                    }
+
+                    .content {
+                        h3 {
+                            text-transform: capitalize;
+                            transition: .3s;
+                            -webkit-transition: .3s;
+                            -moz-transition: .3s;
+                            -ms-transition: .3s;
+                            -o-transition: .3s;
+                            cursor: pointer;
+                            margin-bottom: 15px;
+
+                            &:hover {
+                                color: $special-color;
+                            }
+                        }
+
+                        .info {
+                            a {
+                                color: #777;
+                                font-size: .8rem;
+                                margin-right: 10px;
+
+                                i {
+                                    margin-right: 7px;
+                                }
+                            }
+                        }
+
+                        p {
+                            color: #777;
+                        }
+                    }
+
+                    &:hover img {
+                        transform: scale(1.1);
+                        -webkit-transform: scale(1.1);
+                        -moz-transform: scale(1.1);
+                        -ms-transform: scale(1.1);
+                        -o-transform: scale(1.1);
+                    }
+                }
+            }
+        }
+
+        .editor_pick {
+            background-color: white;
+            padding: 20px;
+            width: 30%;
+
+            .heading {
+                background-color: $secondary-color;
+                padding: 10px 20px;
+                margin-bottom: 20px;
+
+                h3 {
+                    color: white;
+                    text-transform: capitalize;
+                    font-size: .9rem;
+                }
+            }
+
+            .intro {
+                border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+
+                .image {
+                    position: relative;
+                    overflow: hidden;
+
+                    .overlay {
+                        position: absolute;
+                        inset: 0;
+                        background-color: rgba(0, 0, 0, 0.4);
+                    }
+
+                    img {
+                        width: 100%;
+                        transition: .3s;
+                        -webkit-transition: .3s;
+                        -moz-transition: .3s;
+                        -ms-transition: .3s;
+                        -o-transition: .3s;
+                        overflow: hidden;
+
+                    }
+
+                    button {
+                        position: absolute;
+                        left: 15px;
+                        bottom: 15px;
+                        text-transform: capitalize;
+                        color: white;
+                        background-color: $special-color;
+                        border: none;
+                        padding: 5px 20px;
+                        cursor: pointer;
+                    }
+
+                    &:hover img {
+                        transform: scale(1.1);
+                        -webkit-transform: scale(1.1);
+                        -moz-transform: scale(1.1);
+                        -ms-transform: scale(1.1);
+                        -o-transform: scale(1.1);
+                    }
+                }
+
+                .content {
+                    h3 {
+                        cursor: pointer;
+                        transition: .3s;
+                        -webkit-transition: .3s;
+                        -moz-transition: .3s;
+                        -ms-transition: .3s;
+                        -o-transition: .3s;
+                        text-transform: capitalize;
+                        margin: 15px 0;
+
+                        &:hover {
+                            color: $special-color;
+                        }
+                    }
+
+                    .info {
+                        a {
+                            font-size: .8rem;
+                            color: #777;
+                            margin-right: 10px;
+
+                            i {
+                                margin-right: 7px;
+                            }
+                        }
+                    }
+
+                    p {
+                        color: #777;
+                    }
+                }
+            }
+
+            .card {
+                margin-top: 20px;
+                display: flex;
+
+                img {
+                    margin-right: 20px;
+                }
+
+                .content {
+                    h4 {
+                        text-transform: capitalize;
+                        transition: .3s;
+                        -webkit-transition: .3s;
+                        -moz-transition: .3s;
+                        -ms-transition: .3s;
+                        -o-transition: .3s;
+                        cursor: pointer;
+                        line-height: 1.5;
+                        margin-bottom: 10px;
+
+                        &:hover {
+                            color: $special-color;
+                        }
+                    }
+                    .info {
+                        a {
+                            color: #777;
+                            font-size: .8rem;
+                            margin-right: 10px;
+                            i {
+                                margin-right: 7px;
+                            }
+                        }
                     }
                 }
             }
@@ -273,10 +550,46 @@ header {
         .image_container {
             .right_section {
                 flex-direction: column;
+
+                .top_2,
+                .top_3 {
+                    width: 100%;
+                }
+
                 .top_2 {
                     margin-right: 0;
                     margin-bottom: 10px;
                 }
+            }
+        }
+    }
+
+    .news {
+        .container {
+            flex-direction: column;
+
+            .big_news {
+                width: 100%;
+
+                .latest_news {
+                    .card {
+                        flex-direction: column;
+
+                        .image {
+                            width: 100%;
+                        }
+
+                        .content {
+                            h3 {
+                                margin-top: 20px;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .editor_pick {
+                width: 100%;
             }
         }
     }
@@ -308,6 +621,7 @@ header {
             ul {
                 display: none;
             }
+
             .menu_burger {
                 display: block;
             }

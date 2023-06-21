@@ -25,3 +25,43 @@ ul {
     list-style: none;
     padding: 0;
 }
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    margin: 0;
+}
+
+p {
+    line-height: 1.6;
+}
+
+@media (max-width: 1199px) {
+    .container {
+        max-width: 85%;
+    }
+
+    .about {
+        nav {
+            &.stick {
+                width: 85%;
+            }
+        }
+    }
+}
+
+@media (max-width: 570px) {
+    .container {
+        max-width: 100%;
+    }
+
+    .about {
+        nav {
+            &.stick {
+                width: 100%;
+            }
+        }
+    }
+}
