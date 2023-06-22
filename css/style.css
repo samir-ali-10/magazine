@@ -314,10 +314,132 @@ header .container .reach_us a {
   -ms-transform: scale(1.1);
   -o-transform: scale(1.1);
 }
+.news .container .big_news .ad_banner {
+  padding: 20px;
+  background-color: white;
+  margin: 30px 0;
+}
+.news .container .big_news .ad_banner .image img {
+  max-width: 100%;
+}
+.news .container .big_news .popular_posts {
+  padding: 20px;
+  background-color: white;
+  margin-bottom: 30px;
+}
+.news .container .big_news .popular_posts .heading {
+  background-color: #04091e;
+  padding: 10px 20px;
+  margin-bottom: 20px;
+}
+.news .container .big_news .popular_posts .heading h3 {
+  text-transform: capitalize;
+  color: white;
+  font-size: 0.9rem;
+}
+.news .container .big_news .popular_posts .image_container .pizza {
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+.news .container .big_news .popular_posts .image_container .pizza img {
+  width: 100%;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+.news .container .big_news .popular_posts .image_container .pizza .content {
+  position: absolute;
+  left: 40px;
+  bottom: 40px;
+}
+.news .container .big_news .popular_posts .image_container .pizza .content button {
+  background-color: #f6214b;
+  text-transform: capitalize;
+  color: white;
+  border: none;
+  padding: 5px 20px;
+}
+.news .container .big_news .popular_posts .image_container .pizza .content h2 {
+  text-transform: capitalize;
+  color: white;
+  margin: 20px 0;
+}
+.news .container .big_news .popular_posts .image_container .pizza .content .info a {
+  margin-right: 10px;
+  color: white;
+}
+.news .container .big_news .popular_posts .image_container .pizza .content .info a i {
+  margin-right: 7px;
+}
+.news .container .big_news .popular_posts .image_container .pizza:hover img {
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+}
+.news .container .big_news .popular_posts .image_container .marriage {
+  display: flex;
+  justify-content: space-between;
+}
+.news .container .big_news .popular_posts .image_container .marriage .marriage_one {
+  margin-right: 20px;
+}
+.news .container .big_news .popular_posts .image_container .marriage > div {
+  position: relative;
+  overflow: hidden;
+}
+.news .container .big_news .popular_posts .image_container .marriage > div .image {
+  position: relative;
+}
+.news .container .big_news .popular_posts .image_container .marriage > div .image img {
+  width: 100%;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+.news .container .big_news .popular_posts .image_container .marriage > div .image button {
+  position: absolute;
+  left: 15px;
+  bottom: 15px;
+  background-color: #f6214b;
+  color: white;
+  border: none;
+  padding: 5px 20px;
+  text-transform: capitalize;
+}
+.news .container .big_news .popular_posts .image_container .marriage > div:hover img {
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+}
+.news .container .big_news .popular_posts .image_container .marriage > div .content h3 {
+  text-transform: capitalize;
+  margin: 20px 0;
+}
+.news .container .big_news .popular_posts .image_container .marriage > div .content .info a {
+  color: #777;
+  font-size: 0.8rem;
+  margin-right: 10px;
+}
+.news .container .big_news .popular_posts .image_container .marriage > div .content .info a i {
+  margin-right: 7px;
+}
+.news .container .big_news .popular_posts .image_container .marriage > div .content p {
+  color: #777;
+}
 .news .container .editor_pick {
   background-color: white;
   padding: 20px;
   width: 30%;
+  height: fit-content;
 }
 .news .container .editor_pick .heading {
   background-color: #04091e;
@@ -395,6 +517,11 @@ header .container .reach_us a {
 .news .container .editor_pick .card {
   margin-top: 20px;
   display: flex;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+}
+.news .container .editor_pick .card:not(:last-child) {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.4);
 }
 .news .container .editor_pick .card img {
   margin-right: 20px;
@@ -420,6 +547,9 @@ header .container .reach_us a {
 }
 .news .container .editor_pick .card .content .info a i {
   margin-right: 7px;
+}
+.news .container .editor_pick .side_ad .ad img {
+  max-width: 100%;
 }
 
 .active {
@@ -492,6 +622,15 @@ header .container .reach_us a {
   }
   .logo .container .banner_ad img {
     width: 500px;
+  }
+  .news .big_news .popular_posts .image_container .marriage {
+    flex-direction: column;
+  }
+  .news .big_news .popular_posts .image_container .marriage .marriage_one {
+    margin-right: 0 !important;
+  }
+  .news .big_news .popular_posts .image_container .marriage .marriage_one > div {
+    width: 100%;
   }
 }
 @media (max-width: 611px) {
