@@ -423,6 +423,15 @@ header .container .reach_us a {
 .news .container .big_news .popular_posts .image_container .marriage > div .content h3 {
   text-transform: capitalize;
   margin: 20px 0;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+  cursor: pointer;
+}
+.news .container .big_news .popular_posts .image_container .marriage > div .content h3:hover {
+  color: #f6214b;
 }
 .news .container .big_news .popular_posts .image_container .marriage > div .content .info a {
   color: #777;
@@ -550,6 +559,32 @@ header .container .reach_us a {
 }
 .news .container .editor_pick .side_ad .ad img {
   max-width: 100%;
+}
+.news .container .editor_pick .news_letter .heading {
+  margin: 20px 0;
+}
+.news .container .editor_pick .news_letter p {
+  color: #777;
+  text-transform: capitalize;
+  font-size: 0.9rem;
+}
+.news .container .editor_pick .news_letter .subscribe {
+  display: flex;
+  flex-wrap: wrap;
+}
+.news .container .editor_pick .news_letter .subscribe input {
+  border: none;
+  padding: 10px 15px;
+}
+.news .container .editor_pick .news_letter .subscribe input[type=email] {
+  background-color: #eee;
+}
+.news .container .editor_pick .news_letter .subscribe input[type=email]::placeholder {
+  color: #b2b2b2;
+}
+.news .container .editor_pick .news_letter .subscribe input[type=submit] {
+  color: white;
+  background-color: #f6214b;
 }
 
 .active {
