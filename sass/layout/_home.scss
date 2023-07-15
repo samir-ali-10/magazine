@@ -211,6 +211,7 @@ header {
             -moz-transform: scale(1.1);
             -ms-transform: scale(1.1);
             -o-transform: scale(1.1);
+            width: 100%;
         }
 
         .content {
@@ -513,6 +514,7 @@ header {
                                     -ms-transition: .3s;
                                     -o-transition: .3s;
                                     cursor: pointer;
+
                                     &:hover {
                                         color: $special-color;
                                     }
@@ -533,6 +535,94 @@ header {
                                 p {
                                     color: #777;
                                 }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .relevant_stories {
+                padding: 20px;
+                background-color: white;
+                margin-bottom: 30px;
+
+                .heading {
+                    background-color: $secondary-color;
+                    padding: 10px 20px;
+                    margin-bottom: 20px;
+
+                    h3 {
+                        text-transform: capitalize;
+                        color: white;
+                        font-size: .9rem;
+                    }
+                }
+
+                .cards {
+                    .card {
+                        display: flex;
+                        align-items: center;
+
+                        .image {
+                            margin-right: 20px;
+                            position: relative;
+                            overflow: hidden;
+
+                            img {
+                                width: 100%;
+                                transition: .3s;
+                                -webkit-transition: .3s;
+                                -moz-transition: .3s;
+                                -ms-transition: .3s;
+                                -o-transition: .3s;
+
+                                &:hover {
+                                    scale: 1.1;
+                                }
+                            }
+
+                            button {
+                                position: absolute;
+                                left: 15px;
+                                bottom: 15px;
+                                background-color: $special-color;
+                                color: white;
+                                border: none;
+                                padding: 5px 20px;
+                                text-transform: capitalize;
+                            }
+                        }
+
+                        .content {
+                            h3 {
+                                text-transform: capitalize;
+                                transition: .3s;
+                                -webkit-transition: .3s;
+                                -moz-transition: .3s;
+                                -ms-transition: .3s;
+                                -o-transition: .3s;
+                                cursor: pointer;
+                                margin: 20px 0;
+
+                                &:hover {
+                                    color: $special-color;
+                                }
+                            }
+
+                            .info {
+                                a {
+                                    color: #777;
+                                    font-size: .8rem;
+                                    margin-right: 10px;
+
+                                    i {
+                                        margin-right: 7px;
+                                    }
+                                }
+                            }
+
+                            p {
+                                color: #777;
                             }
                         }
                     }
@@ -689,31 +779,84 @@ header {
                     }
                 }
             }
+
             .news_letter {
+                margin-bottom: 40px;
+
                 .heading {
                     margin: 20px 0;
                 }
+
                 p {
                     color: #777;
                     text-transform: capitalize;
                     font-size: .9rem;
                 }
+
                 .subscribe {
                     display: flex;
                     flex-wrap: wrap;
+
                     input {
                         border: none;
                         padding: 10px 15px;
                     }
+
                     input[type="email"] {
                         background-color: #eee;
+
                         &::placeholder {
                             color: #b2b2b2;
                         }
                     }
+
                     input[type="submit"] {
                         color: white;
                         background-color: $special-color;
+                    }
+                }
+            }
+
+            .social_network {
+                .socials {
+                    .social {
+                        display: flex;
+                        justify-content: space-around;
+                        align-items: center;
+                        color: white;
+                        margin-bottom: 20px;
+
+                        .icon {
+                            border-right: 1px solid white;
+                            padding-right: 10px;
+
+                            i {
+                                background-color: white;
+                                padding: 5px;
+                                color: initial;
+                            }
+                        }
+
+                        .link {
+                            padding-left: 10px;
+                            border-left: 1px solid white;
+                            a {
+                                color: white;
+                            }
+                        }
+
+                        &.facebook {
+                            background-color: $facebook-background;
+                        }
+                        &.twitter {
+                            background-color: $twitter-background;
+                        }
+                        &.youtube {
+                            background-color: $youtube-background;
+                        }
+                        &.wifi {
+                            background-color: $wifi-background;
+                        }
                     }
                 }
             }
@@ -806,6 +949,19 @@ header {
                         }
                     }
                 }
+
+                .relevant_stories {
+                    .cards {
+                        .card {
+                            flex-direction: column;
+
+                            .image {
+                                margin-right: 0;
+                                width: 100%;
+                            }
+                        }
+                    }
+                }
             }
 
             .editor_pick {
@@ -876,6 +1032,22 @@ header {
             .banner_ad {
                 img {
                     width: 200px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 250px) {
+    .editor_pick {
+        .cards {
+            .card {
+                flex-direction: column;
+                .image {
+                    width: 100%;
+                    img {
+                        width: 100%;
+                    }
                 }
             }
         }
