@@ -112,6 +112,9 @@ header {
 
         .menu_burger {
             display: none;
+            background-color: transparent;
+            border: none;
+            outline: none;
         }
     }
 
@@ -544,7 +547,7 @@ header {
             .relevant_stories {
                 padding: 20px;
                 background-color: white;
-                margin-bottom: 30px;
+                margin-bottom: 100px;
 
                 .heading {
                     background-color: $secondary-color;
@@ -864,6 +867,63 @@ header {
     }
 }
 
+footer {
+    background-color: $secondary-color;
+    color: white;
+    padding: 100px 20px;
+    text-align: center;
+    .sections {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(min(200px, 100%), 1fr));
+        margin-bottom: 50px;
+        .section {
+            text-align: left;
+            h3 {
+                text-transform: capitalize;
+                margin-bottom: 40px;
+            }
+            ul {
+                &.feed {
+                    display: flex;
+                    flex-wrap: wrap;
+                }
+                li {
+                    margin-bottom: 20px;
+                    a {
+                        color: #777;
+                        text-transform: capitalize;
+                    }
+                    img {
+                        margin-right: 10px;
+                    }
+                }
+            }
+        }
+    }
+    .copyright {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        p {
+            font-size: .9rem;
+            span {
+                color: $special-color;
+            }
+        }
+        .socials {
+            display: flex;
+            a {
+                width: 40px;
+                height: 40px;
+                text-align: center;
+                line-height: 40px;
+                background-color: rgba(255, 255, 255, 0.1);
+                margin-right: 15px;
+            }
+        }
+    }
+}
+
 .active {
     display: block !important;
 }
@@ -1032,6 +1092,21 @@ header {
             .banner_ad {
                 img {
                     width: 200px;
+                }
+            }
+        }
+    }
+
+    footer {
+        .copyright {
+            .socials {
+                a {
+                    width: 20px;
+                    height: 20px;
+                    line-height: 20px;
+                    i {
+                        font-size: .8rem;
+                    }
                 }
             }
         }

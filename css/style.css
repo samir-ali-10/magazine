@@ -94,6 +94,9 @@ header .container .reach_us a {
 }
 .about nav .menu_burger {
   display: none;
+  background-color: transparent;
+  border: none;
+  outline: none;
 }
 .about .drop_down {
   display: none;
@@ -448,7 +451,7 @@ header .container .reach_us a {
 .news .container .big_news .relevant_stories {
   padding: 20px;
   background-color: white;
-  margin-bottom: 30px;
+  margin-bottom: 100px;
 }
 .news .container .big_news .relevant_stories .heading {
   background-color: #04091e;
@@ -695,6 +698,61 @@ header .container .reach_us a {
   background-color: #f17300;
 }
 
+footer {
+  background-color: #04091e;
+  color: white;
+  padding: 100px 20px;
+  text-align: center;
+}
+footer .sections {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(200px, 100%), 1fr));
+  margin-bottom: 50px;
+}
+footer .sections .section {
+  text-align: left;
+}
+footer .sections .section h3 {
+  text-transform: capitalize;
+  margin-bottom: 40px;
+}
+footer .sections .section ul.feed {
+  display: flex;
+  flex-wrap: wrap;
+}
+footer .sections .section ul li {
+  margin-bottom: 20px;
+}
+footer .sections .section ul li a {
+  color: #777;
+  text-transform: capitalize;
+}
+footer .sections .section ul li img {
+  margin-right: 10px;
+}
+footer .copyright {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+footer .copyright p {
+  font-size: 0.9rem;
+}
+footer .copyright p span {
+  color: #f6214b;
+}
+footer .copyright .socials {
+  display: flex;
+}
+footer .copyright .socials a {
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  background-color: rgba(255, 255, 255, 0.1);
+  margin-right: 15px;
+}
+
 .active {
   display: block !important;
 }
@@ -798,6 +856,14 @@ header .container .reach_us a {
   .logo .container .banner_ad img {
     width: 200px;
   }
+  footer .copyright .socials a {
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+  }
+  footer .copyright .socials a i {
+    font-size: 0.8rem;
+  }
 }
 @media (max-width: 250px) {
   .editor_pick .cards .card {
@@ -816,7 +882,6 @@ header .container .reach_us a {
 
 body {
   margin: 0;
-  height: 5000px;
   font-family: "Open Sans", sans-serif;
 }
 
