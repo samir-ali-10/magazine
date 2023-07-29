@@ -1,8 +1,8 @@
 let dropDown = document.querySelector(".about .drop_down"),
-    drop = document.querySelector(".about .drop");
+    drop = document.querySelector(".about nav ul.list .drop");
 
 drop.addEventListener("click", () => {
-    dropDown.classList.toggle("active");
+    dropDown.classList.add("active");
 })
 
 /////////////////////////////////////////////////
@@ -18,3 +18,21 @@ function scrollFunction() {
 }
 
 window.onscroll = function() {scrollFunction()};
+
+////////////////////////////////////////////////////
+
+let menuBurger = document.querySelector(".menu_burger"),
+    list = document.querySelector(".about nav ul.list");
+
+menuBurger.addEventListener("click", () => {
+    list.classList.toggle("active");
+})
+
+function fixingIssues() {
+    if(!list.classList.contains("active")) {
+        drop.classList.remove("active");
+    }
+}
+
+fixingIssues();
+

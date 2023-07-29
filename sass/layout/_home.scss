@@ -99,6 +99,10 @@ header {
         ul {
             display: flex;
 
+            ul.active {
+                display: block !important;
+            }
+
             li {
                 margin-right: 20px;
 
@@ -116,28 +120,34 @@ header {
             border: none;
             outline: none;
         }
-    }
 
-    .drop_down {
-        display: none;
-        background-color: white;
-        width: fit-content;
-        padding: 5px 15px;
-        position: absolute;
-        left: 27%;
-        z-index: 9999;
+        .drop_down {
+            display: none;
+            background-color: white;
+            width: fit-content;
+            padding: 5px 15px;
+            position: absolute;
+            left: 27%;
+            bottom: -190px;
+            z-index: 9999;
 
-        ul {
-            li {
-                margin-bottom: 10px;
+            ul.drop {
+                display: flex;
+                flex-direction: column;
+                li {
+                    margin-bottom: 10px;
 
-                a {
-                    color: black;
-                    text-transform: capitalize;
+                    a {
+                        font-size: 1rem;
+                        color: black;
+                        text-transform: capitalize;
+                    }
                 }
             }
         }
     }
+
+
 
     .image_container {
         display: flex;
@@ -843,6 +853,7 @@ header {
                         .link {
                             padding-left: 10px;
                             border-left: 1px solid white;
+
                             a {
                                 color: white;
                             }
@@ -851,12 +862,15 @@ header {
                         &.facebook {
                             background-color: $facebook-background;
                         }
+
                         &.twitter {
                             background-color: $twitter-background;
                         }
+
                         &.youtube {
                             background-color: $youtube-background;
                         }
+
                         &.wifi {
                             background-color: $wifi-background;
                         }
@@ -872,27 +886,34 @@ footer {
     color: white;
     padding: 100px 20px;
     text-align: center;
+
     .sections {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(min(200px, 100%), 1fr));
         margin-bottom: 50px;
+
         .section {
             text-align: left;
+
             h3 {
                 text-transform: capitalize;
                 margin-bottom: 40px;
             }
+
             ul {
                 &.feed {
                     display: flex;
                     flex-wrap: wrap;
                 }
+
                 li {
                     margin-bottom: 20px;
+
                     a {
                         color: #777;
                         text-transform: capitalize;
                     }
+
                     img {
                         margin-right: 10px;
                     }
@@ -900,18 +921,23 @@ footer {
             }
         }
     }
+
     .copyright {
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
+
         p {
             font-size: .9rem;
+
             span {
                 color: $special-color;
             }
         }
+
         .socials {
             display: flex;
+
             a {
                 width: 40px;
                 height: 40px;
@@ -1075,8 +1101,19 @@ footer {
 
     .about {
         nav {
-            ul {
+            ul.list {
+                flex-direction: column;
+                position: absolute;
+                background-color: $special-color;
+                color: white;
+                bottom: -160px;
+                z-index: 99;
+                padding: 10px;
                 display: none;
+
+                li {
+                    margin-bottom: 10px;
+                }
             }
 
             .menu_burger {
@@ -1104,6 +1141,7 @@ footer {
                     width: 20px;
                     height: 20px;
                     line-height: 20px;
+
                     i {
                         font-size: .8rem;
                     }
@@ -1118,8 +1156,10 @@ footer {
         .cards {
             .card {
                 flex-direction: column;
+
                 .image {
                     width: 100%;
+
                     img {
                         width: 100%;
                     }

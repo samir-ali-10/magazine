@@ -84,6 +84,9 @@ header .container .reach_us a {
 .about nav ul {
   display: flex;
 }
+.about nav ul ul.active {
+  display: block !important;
+}
 .about nav ul li {
   margin-right: 20px;
 }
@@ -98,19 +101,25 @@ header .container .reach_us a {
   border: none;
   outline: none;
 }
-.about .drop_down {
+.about nav .drop_down {
   display: none;
   background-color: white;
   width: fit-content;
   padding: 5px 15px;
   position: absolute;
   left: 27%;
+  bottom: -190px;
   z-index: 9999;
 }
-.about .drop_down ul li {
+.about nav .drop_down ul.drop {
+  display: flex;
+  flex-direction: column;
+}
+.about nav .drop_down ul.drop li {
   margin-bottom: 10px;
 }
-.about .drop_down ul li a {
+.about nav .drop_down ul.drop li a {
+  font-size: 1rem;
   color: black;
   text-transform: capitalize;
 }
@@ -845,8 +854,18 @@ footer .copyright .socials a {
   :root {
     font-size: 10px;
   }
-  .about nav ul {
+  .about nav ul.list {
+    flex-direction: column;
+    position: absolute;
+    background-color: #f6214b;
+    color: white;
+    bottom: -160px;
+    z-index: 99;
+    padding: 10px;
     display: none;
+  }
+  .about nav ul.list li {
+    margin-bottom: 10px;
   }
   .about nav .menu_burger {
     display: block;
