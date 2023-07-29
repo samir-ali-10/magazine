@@ -2,7 +2,7 @@ let dropDown = document.querySelector(".about .drop_down"),
     drop = document.querySelector(".about nav ul.list .drop");
 
 drop.addEventListener("click", () => {
-    dropDown.classList.add("active");
+    dropDown.classList.toggle("active");
 })
 
 /////////////////////////////////////////////////
