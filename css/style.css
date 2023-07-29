@@ -876,6 +876,49 @@ footer .copyright .socials a {
     width: 100%;
   }
 }
+.about .big_banner {
+  background-color: #f6214b;
+  color: white;
+  padding: 100px 0;
+  text-align: center;
+}
+.about .big_banner h1 {
+  text-transform: capitalize;
+  margin-bottom: 20px;
+  font-size: 2.7rem;
+}
+.about .big_banner a {
+  text-transform: capitalize;
+  color: white;
+}
+.about .big_banner span {
+  margin: 0 10px;
+}
+
+.news .big_news .latest_news .load_more {
+  text-align: center;
+  margin-top: 30px;
+}
+.news .big_news .latest_news .load_more button {
+  text-transform: capitalize;
+  background-color: #ecf0f1;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+.news .big_news .latest_news .load_more button:hover {
+  color: white;
+  background-color: #f6214b;
+}
+
 * {
   box-sizing: border-box;
 }
