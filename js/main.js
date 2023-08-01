@@ -28,11 +28,5 @@ menuBurger.addEventListener("click", () => {
     list.classList.toggle("active");
 })
 
-function fixingIssues() {
-    if(!list.classList.contains("active")) {
-        drop.classList.remove("active");
-    }
-}
-
-fixingIssues();
+//////////////////////////////////////////////////
 

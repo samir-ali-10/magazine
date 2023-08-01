@@ -71,7 +71,7 @@ header .container .reach_us a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 20px 0 20px;
+  padding: 30px;
   margin-bottom: 15px;
   height: 42px;
 }
@@ -81,16 +81,16 @@ header .container .reach_us a {
   width: 75%;
   z-index: 9999;
 }
-.about nav ul {
+.about nav ul.list {
   display: flex;
 }
-.about nav ul ul.active {
+.about nav ul.list ul.active {
   display: block !important;
 }
-.about nav ul li {
+.about nav ul.list li {
   margin-right: 20px;
 }
-.about nav ul li a {
+.about nav ul.list li a {
   color: white;
   text-transform: uppercase;
   font-size: 0.7rem;
@@ -938,6 +938,267 @@ footer .copyright .socials a {
   background-color: #f6214b;
 }
 
+.about .information {
+  margin-top: 100px;
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(auto-fill, minmax(min(300px, 100%), 1fr));
+  padding-bottom: 100px;
+}
+.about .information .info {
+  display: flex;
+  margin-bottom: 40px;
+}
+.about .information .info .icon {
+  height: 60px;
+  text-align: center;
+  line-height: 60px;
+  background-color: white;
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+  margin-right: 20px;
+  padding: 0 20px;
+}
+.about .information .info .icon i {
+  font-size: 1.3rem;
+}
+.about .information .info .icon:hover {
+  background-color: #f6214b;
+  color: white;
+}
+.about .information .info .content h3 {
+  text-transform: capitalize;
+  font-size: 1.4rem;
+}
+.about .information .info .content p {
+  color: #777;
+}
+
+.about_us {
+  display: flex;
+  background-color: #f9f9ff;
+}
+.about_us .image {
+  margin-right: 50px;
+  width: 45%;
+}
+.about_us .image img {
+  width: 100%;
+  height: 100%;
+}
+.about_us .content {
+  width: 40%;
+  margin-right: auto;
+  margin-top: 80px;
+}
+.about_us .content h1 {
+  text-transform: capitalize;
+  font-size: 2.3rem;
+}
+.about_us .content p {
+  color: #777;
+}
+.about_us .content .info {
+  display: flex;
+  margin-top: 50px;
+}
+.about_us .content .info .part i {
+  font-size: 1.8rem;
+  margin-bottom: 25px;
+  color: #f6214b;
+}
+.about_us .content .info .part h3 {
+  text-transform: capitalize;
+}
+
+.goals {
+  background-color: #ecf0f1;
+  text-align: center;
+  padding: 100px 20px;
+}
+.goals .content {
+  display: flex;
+  justify-content: space-between;
+}
+.goals .content .accordion {
+  width: 45%;
+  margin-right: 20px;
+}
+.goals .content .accordion .acc {
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+.goals .content .accordion .acc .head {
+  display: flex !important;
+  justify-content: space-between;
+  background-color: white;
+  padding: 10px 20px;
+  text-transform: capitalize;
+  cursor: pointer;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+.goals .content .accordion .acc .head.active {
+  background-color: #f6214b;
+  color: white;
+}
+.goals .content .accordion .acc .head.active i {
+  transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+}
+.goals .content .accordion .acc .head h3 {
+  font-size: 1rem;
+}
+.goals .content .accordion .acc p {
+  margin: 0;
+  height: 0;
+  overflow: hidden;
+  text-align: left;
+}
+.goals .content .accordion .acc p.active {
+  margin: 15px 0;
+  height: 100%;
+}
+.goals .content .help_video iframe {
+  width: 100%;
+}
+
+.client {
+  text-align: center;
+  padding: 100px 20px;
+}
+.client .persons {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(400px, 100%), 1fr));
+  gap: 30px;
+}
+.client .persons .person {
+  background-color: rgba(249, 249, 255, 0.6);
+  padding: 20px;
+  display: flex;
+  cursor: pointer;
+}
+.client .persons .person .image {
+  margin-right: 35px;
+}
+.client .persons .person .image img {
+  width: 40px;
+}
+.client .persons .person .content {
+  text-align: left;
+}
+.client .persons .person .content p {
+  text-transform: capitalize;
+  color: #777;
+  font-size: 0.9rem;
+  margin-top: 0;
+}
+.client .persons .person .content h3 {
+  text-transform: capitalize;
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+.client .persons .person .content h3:hover {
+  color: #f6214b;
+}
+.client .persons .person .content span {
+  text-transform: capitalize;
+  color: #777;
+}
+
+.sponsors {
+  background-color: #ecf0f1;
+  padding: 80px 0;
+  text-align: center;
+}
+.sponsors .slider {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(250px, 100%), 1fr));
+  justify-content: space-between;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+.sponsors .slider .slide {
+  margin-bottom: 60px;
+}
+.sponsors .slider .slide img {
+  width: 100px;
+}
+
+.heading {
+  margin-bottom: 50px;
+}
+.heading h2 {
+  text-transform: capitalize;
+  font-size: 2.2rem;
+}
+.heading p {
+  color: #777;
+  text-transform: capitalize;
+}
+
+@media (max-width: 1190px) {
+  .about .information {
+    padding: 0 20px;
+  }
+  .about .information .info .icon {
+    height: 40px;
+    line-height: 40px;
+  }
+  .about_us {
+    flex-direction: column;
+  }
+  .about_us .image {
+    width: 100%;
+  }
+  .about_us .content {
+    width: 100%;
+    padding: 0 20px;
+  }
+  .goals .content {
+    flex-direction: column;
+  }
+  .goals .content .accordion {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+}
+@media (max-width: 500px) {
+  .about_us .content .info {
+    flex-direction: column;
+  }
+}
+@media (max-width: 300px) {
+  .client .persons .person {
+    flex-direction: column;
+    text-align: left;
+  }
+  .client .persons .person .image {
+    margin-bottom: 20px;
+  }
+}
 * {
   box-sizing: border-box;
 }
