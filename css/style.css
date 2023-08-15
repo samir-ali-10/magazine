@@ -108,7 +108,7 @@ header .container .reach_us a {
   padding: 5px 15px;
   position: absolute;
   left: 27%;
-  bottom: -190px;
+  bottom: -230px;
   z-index: 9999;
 }
 .about nav .drop_down ul.drop {
@@ -117,6 +117,8 @@ header .container .reach_us a {
 }
 .about nav .drop_down ul.drop li {
   margin-bottom: 10px;
+  border-bottom: 1px solid #d6d6d6;
+  padding-bottom: 10px;
 }
 .about nav .drop_down ul.drop li a {
   font-size: 1rem;
@@ -1197,6 +1199,235 @@ footer .copyright .socials a {
   }
   .client .persons .person .image {
     margin-bottom: 20px;
+  }
+}
+.about .contact {
+  background-color: white;
+  padding: 20px;
+  margin-top: 50px;
+}
+.about .contact .map {
+  height: 500px;
+  margin-bottom: 50px;
+}
+.about .contact .map iframe {
+  width: 100%;
+  height: 100%;
+}
+.about .contact .contact_info {
+  display: flex;
+  justify-content: space-between;
+}
+.about .contact .contact_info .infos {
+  width: 25%;
+}
+.about .contact .contact_info .infos .info {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.about .contact .contact_info .infos .info i {
+  font-size: 1.7rem;
+  color: #f6214b;
+  margin-right: 25px;
+}
+.about .contact .contact_info .infos .info .content h4 {
+  font-weight: 400;
+}
+.about .contact .contact_info .infos .info .content p {
+  color: #777;
+  margin: 0;
+  margin-top: 5px;
+}
+.about .contact .contact_info form {
+  width: 70%;
+}
+.about .contact .contact_info form .test {
+  display: flex;
+}
+.about .contact .contact_info form .test .inputs {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  margin-right: 40px;
+}
+.about .contact .contact_info form .test .inputs input {
+  padding: 15px 20px;
+  margin-bottom: 20px;
+  border: 1px solid #c4c4c4;
+  outline: none;
+}
+.about .contact .contact_info form .test .message {
+  width: 50%;
+}
+.about .contact .contact_info form .test .message textarea {
+  width: 100%;
+  border: 1px solid #c4c4c4;
+  padding: 15px;
+  height: 100%;
+  outline: none;
+}
+.about .contact .contact_info form .submit {
+  text-align: right;
+  margin-top: 40px;
+}
+.about .contact .contact_info form .submit input {
+  background-color: #f6214b;
+  padding: 10px 20px;
+  font-size: 0.9rem;
+  color: white;
+  border: none;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+  border: 1px solid #f6214b;
+  outline: none;
+}
+.about .contact .contact_info form .submit input:hover {
+  background-color: white;
+  color: #f6214b;
+}
+
+.news .reviews {
+  background-color: white;
+  padding: 30px;
+  height: fit-content;
+  margin-right: 20px;
+  width: 70%;
+  margin-bottom: 20px;
+}
+.news .reviews .starter {
+  text-transform: capitalize;
+  color: white;
+  background-color: #f6214b;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  padding: 5px 20px;
+}
+.news .reviews .heading {
+  margin-top: 30px;
+  margin-bottom: 60px;
+}
+.news .reviews .heading h2 {
+  text-transform: capitalize;
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+.news .reviews .heading .links a {
+  color: #777;
+  margin-right: 15px;
+  font-size: 0.8rem;
+  text-transform: capitalize;
+}
+.news .reviews .heading .links a i {
+  margin-right: 5px;
+}
+.news .reviews .review p {
+  color: #777;
+  font-size: 0.9rem;
+  margin-bottom: 15px;
+}
+.news .reviews .review p:last-of-type {
+  font-style: italic;
+  border-left: 2px solid #f6214b;
+  padding-left: 20px;
+}
+.news .reviews .review .togglers {
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+.news .reviews .review .togglers button {
+  background-color: #04091e;
+  color: white;
+  text-transform: capitalize;
+  border: none;
+  outline: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+.news .reviews .review .togglers button:hover {
+  background-color: #f6214b;
+}
+.news .reviews .review .togglers button i {
+  margin: 0 10px 0 10px;
+}
+.news .reviews .comments {
+  margin-top: 30px;
+}
+.news .reviews .comments .comments_counter {
+  margin-bottom: 30px;
+  font-weight: 700;
+}
+.news .reviews .comments .comment {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+.news .reviews .comments .comment:nth-of-type(2) {
+  padding-left: 30px;
+}
+.news .reviews .comments .comment .content {
+  display: flex;
+}
+.news .reviews .comments .comment .content .image {
+  margin-right: 15px;
+}
+.news .reviews .comments .comment .content .image img {
+  width: 100%;
+}
+.news .reviews .comments .comment .content .info h4 {
+  text-transform: capitalize;
+  margin-bottom: 5px;
+}
+.news .reviews .comments .comment .content .info span {
+  color: #e0e0e0;
+  text-transform: capitalize;
+}
+.news .reviews .comments .comment .content .info p {
+  text-transform: capitalize;
+  color: #777;
+}
+.news .reviews .comments .comment .reply {
+  height: fit-content;
+  width: fit-content;
+  text-transform: uppercase;
+  background-color: #04091e;
+  color: white;
+  border: none;
+  outline: none;
+  padding: 10px 25px;
+}
+
+@media (max-width: 1000px) {
+  .news .reviews {
+    width: 100%;
+  }
+}
+@media (max-width: 611px) {
+  .news .reviews .review .togglers button {
+    font-size: 0.9rem;
+  }
+  .news .reviews .comments .comment .reply {
+    font-size: 0.9rem;
+  }
+}
+@media (max-width: 500px) {
+  .news .reviews .comments .comment {
+    flex-direction: column;
+  }
+  .news .reviews .comments .comment .content {
+    margin-bottom: 15px;
   }
 }
 * {
