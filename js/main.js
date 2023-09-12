@@ -17,7 +17,7 @@ function scrollFunction() {
     }
 }
 
-window.onscroll = function() {scrollFunction()};
+window.onscroll = function () { scrollFunction() };
 
 ////////////////////////////////////////////////////
 
@@ -29,4 +29,30 @@ menuBurger.addEventListener("click", () => {
 })
 
 //////////////////////////////////////////////////
+
+let imagesSlider = document.querySelector(".reviews .slider .images"),
+    leftArrow = document.querySelector(".reviews .slider .left"),
+    img = document.querySelector(".reviews .slider .images img"),
+    rightArrow = document.querySelector(".reviews .slider .right"),
+    images = ["imgs/f1.jpg.webp", "imgs/g2.jpg.webp", "imgs/g3.jpg.webp"],
+    counter = 0;
+
+
+
+rightArrow.addEventListener("click", () => {
+    counter++;
+    if (counter === images.length) {
+        counter = 0
+    }
+    img.setAttribute("src", images[counter])
+
+})
+
+leftArrow.addEventListener("click", () => {
+    counter--;
+    if (counter === -1) {
+        counter = images.length - 1;
+    }
+    img.setAttribute("src", images[counter])
+})
 
